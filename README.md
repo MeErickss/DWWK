@@ -1,6 +1,6 @@
 TRABALHO DE DW 4° BIMESTRE.
 ----------------------------------------------------------------------------
-Integrantes:
+Integrantes:<br> 
   |Bárbara Lauber<br>
   |Erick Alair<br>
   |Otavio Nacke<br>
