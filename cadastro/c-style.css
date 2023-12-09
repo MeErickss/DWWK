@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root{
+    --red:  rgba(239, 88, 88, 1);
+    --darkblue:  rgba(5, 5, 34, 1);
+    --yelllow: rgba(255, 222, 105, 1);
+    --bege: rgb(244, 232, 191);
+}
+
+body{
+    background-color: var(--darkblue);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    font-family:'Nunito', sans-serif;
+}
+
+a{
+    color:var(--bege);
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+nav .desktop {display: none;}
+nav .menu-icon{display: block;}
+
+nav{
+    background-color: var(--red);
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 30px; */
+}
+
+.nav-list{
+    display: flex;
+    /* flex-direction: column; */
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* .icon{
+    display: none;
+    width: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+} */
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: var(--bege);
+    margin: 7px;
+}
+
+#back-image{
+    position: fixed;
+    width:200px;
+    opacity: 0.3;
+    z-index: -1;
+    /* background-size: cover; */
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--bege);
+    padding: 50px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px){
+    .nav-list {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 90vh;
+        background: var(--red);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        left: -50%;
+    }
+
+    .nav-list{
+        margin-left: 0;
+        /* opacity: 0; */
+    }
+
+    .mobile-menu{display: block;}
+}
+
+
+

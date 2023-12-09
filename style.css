@@ -12,11 +12,13 @@
     --bege: rgb(244, 232, 191);
 }
 
+body{
+    background-color: var(--darkblue);
+}
 
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: var(--darkblue);
     font-family:'Nunito', sans-serif;
 }
 
@@ -54,11 +56,15 @@ nav{
     letter-spacing: 1.5px;
 }
 
-#icon-menu{
+/* .icon{
+    display: none;
     width: 30px;
-}
+    border: none;
+    background: none;
+    cursor: pointer;
+} */
 
-/* .mobile-menu{
+.mobile-menu{
     display: none;
     cursor: pointer;
 }
@@ -67,12 +73,14 @@ nav{
     width: 32px;
     height: 2px;
     background-color: var(--bege);
-    margin: 8px;
-} */
+    margin: 7px;
+}
 
-main #image-background{
+#back-image{
+    position: fixed;
     width:200px;
-    opacity: 0.5;
+    opacity: 0.3;
+    z-index: -1;
     /* background-size: cover; */
 }
 
@@ -82,6 +90,10 @@ main{
     align-items: center;
     justify-content: center;
     margin: auto;
+    color: var(--bege);
+    padding: 50px;
+    text-align: center;
+
 }
 
 @media (max-width: 768px){

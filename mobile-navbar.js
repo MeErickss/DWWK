@@ -1,5 +1,5 @@
-let iconMenu = document.querySelector('#icon-menu')
-let menuMobile = document.querySelector('.nav-list')
+let iconMenu = document.querySelector('.mobile-menu');
+let menuMobile = document.querySelector('.nav-list');
 
 function handleMenu(){
     if (menuMobile.style.left = "-50%"  || menuMobile.style.left == ''){
@@ -13,3 +13,10 @@ function handleMenu(){
         
     }
 }
+
+// function toggleMenu(){
+//     let menuMobile = document.querySelector('menu');
+//     menuMobile.classList.toggle('active');
+// }
+
+// iconMenu.addEventListener('click', toggleMenu);
