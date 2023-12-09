@@ -1,12 +1,15 @@
-let iconMenu = document.querySelector('.mobile-menu')
+let iconMenu = document.querySelector('#icon-menu')
 let menuMobile = document.querySelector('.nav-list')
 
 function handleMenu(){
     if (menuMobile.style.left = "-50%"  || menuMobile.style.left == ''){
-        menuMobile.style.left = "0%"
+        menuMobile.style.left = "50%"
         iconMenu.src = '../close.svg'
         
     } else {
         menuMobile.style.left = '-50%'
-        iconMenu.src = '../menu.svg'
+        menuMobile
+        iconMenu.src = '../menu.svg';
+        
     }
+}

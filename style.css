@@ -54,7 +54,11 @@ nav{
     letter-spacing: 1.5px;
 }
 
-.mobile-menu{
+#icon-menu{
+    width: 30px;
+}
+
+/* .mobile-menu{
     display: none;
     cursor: pointer;
 }
@@ -64,7 +68,7 @@ nav{
     height: 2px;
     background-color: var(--bege);
     margin: 8px;
-}
+} */
 
 main #image-background{
     width:200px;

@@ -6,6 +6,7 @@
     <title>MUSIC</title>
 
     <link rel="stylesheet" href="style.css">
+    <script defer src="mobile-navbar.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
@@ -19,18 +20,22 @@
                 <a href="/" class="logo">Music</a>
 
                 <!-- abaixo estou criando o icone de menu de forma manual que aprendi no video " " -->
-                <div class="mobile-menu" onclick="handleMenu()">
+                <!-- <div class="mobile-menu" onclick="handleMenu()">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
+                </div> -->
+
+                <div class="icon" onclick="handleMenu()">
+                    <img id="icon-menu" src="imagens/menu.svg" width="30px">
                 </div>
 
                 <ul class="nav-list">
-                    <li> <a href="/">Início</a </li>
-                    <li> <a href="/">Sobre</a></li>
+                    <li> <a href="index.html">Início</a </li>
+                    <li> <a href="sobre_nos/sobre.html">Sobre</a></li>
                     <li> <a href="/">Projeto BD</a></li>
                     <li> <a href="/">Listagem</a></li>
-                    <li> <a href="/">Cadastro</a></li>
+                    <li> <a href="cadastro/cadastro.html">Cadastro</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,6 +43,6 @@
         <main><img id="image-background" src="imagens/backgroud.png" ></main>
     </div>
 
-    <script src="mobile-navbar.js"></script>
+    
 </body>
 </html>
