@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="c-style.css">
     <script defer src="../mobile-navbar.js"></script>
-    
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
@@ -32,7 +31,7 @@
                 </div> -->
 
                 <ul class="nav-list">
-                    <li> <a href="index.html">Início</a </li>
+                    <li> <a href="../index.html">Início</a </li>
                     <li> <a href="sobre_nos/sobre.html">Sobre</a></li>
                     <li> <a href="/">Projeto BD</a></li>
                     <li> <a href="/">Listagem</a></li>
@@ -42,10 +41,23 @@
         </header>
 
         <main>
-            <img id="back-image" src="imagens/backgroud.png" >
+            <div class="row-1"><img id="back-image" src="../imagens/backgroud.png" ></div>
             
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum explicabo labore consequuntur dignissimos veritatis cum officia, reprehenderit beatae aperiam ut qui doloremque veniam tempore magnam amet, consectetur, alias est molestiae!</p>
-        
+            <div class="row-2">
+                <div>
+                    <h3 id="title">BEM VINDO!</h3>
+                    <p id="desc">Olá! Seja bem vindo ao nosso site.É novo aqui? Que tal efetuar um cadastro?</p>
+                </div>
+
+                <div class="register">
+                    
+                </div>
+
+                <button onclick="menuRegister()">
+                    Create Account
+                </button>
+            </div>
+
         </main>
     </div>
 
