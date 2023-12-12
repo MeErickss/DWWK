@@ -6,11 +6,11 @@
     <title>MUSIC</title>
 
     <link rel="stylesheet" href="c-style.css">
-    <script defer src="../mobile-navbar.js"></script>
-
+    
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
-      </style>
+        </style>
 </head>
 <body>
     <div class="container">
@@ -18,49 +18,60 @@
         <header>
             <nav>
                 <a href="/" class="logo">Music</a>
-
+                
                 <!-- abaixo estou criando o icone de menu de forma manual que aprendi no video " " -->
                 <div class="mobile-menu" onclick="handleMenu()">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-
-                <!-- <div class="icon">
-                    <img id="menu-mobile" src="imagens/menu.svg">
-                </div> -->
-
+                
                 <ul class="nav-list">
                     <li> <a href="../index.html">Início</a </li>
-                    <li> <a href="sobre_nos/sobre.html">Sobre</a></li>
-                    <li> <a href="/">Projeto BD</a></li>
-                    <li> <a href="/">Listagem</a></li>
-                    <li> <a href="cadastro/cadastro.html">Cadastro</a></li>
-                </ul>
+                        <li> <a href="sobre_nos/sobre.html">Sobre</a></li>
+                        <li> <a href="/">Projeto BD</a></li>
+                        <li> <a href="/">Listagem</a></li>
+                        <li> <a href="cadastro/cadastro.html">Cadastro</a></li>
+                    </ul>
             </nav>
         </header>
 
         <main>
             <div class="row-1"><img id="back-image" src="../imagens/backgroud.png" ></div>
             
+
             <div class="row-2">
-                <div>
+
+                <div class="welcome">
                     <h3 id="title">BEM VINDO!</h3>
                     <p id="desc">Olá! Seja bem vindo ao nosso site.É novo aqui? Que tal efetuar um cadastro?</p>
                 </div>
 
+
                 <div class="register">
-                    
+                    <p>Hello...</p>
+                    <h2>Register</h2>
+
+
+                    <input type="text" name="username" id="id_user" placeholder="username">
+
+                    <input type="email" name="email" id="id_email" placeholder="user@email.com">
+
+                    <input type="password" name="password" id="id_pass" placeholder="password">
+
+                    <button id="btn_register" onclick="register()">Register</button>
                 </div>
+                
 
-                <button onclick="menuRegister()">
-                    Create Account
-                </button>
+                <button id="btn_create" onclick="menuRegister()"> Create Account </button>
+
+                <p></p>
             </div>
-
+            
         </main>
     </div>
-
     
+    <script src="../mobile-navbar.js"></script>
+    <script src="c-script.js"></script>
 </body>
 </html>

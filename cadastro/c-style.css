@@ -1,3 +1,5 @@
+/* =======| FORMATAÇÃO BASE DO SITE | ================================================== */
+
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +24,7 @@ body{
     height: 100vh;
 }
 
-/* ========================================================= */
+/* ==========| lAYOUT NAVBAR |=============================================== */
 
 a{
     color:var(--bege);
@@ -78,7 +80,7 @@ nav{
     margin: 7px;
 }
 
-/* ========================================================= */
+/* =========| IMAGEM FIXA DE BACKGROUND |================================================ */
 
 #back-image{
     position: absolute;
@@ -88,7 +90,9 @@ nav{
     z-index: -1;
 }
 
-main{
+/* ==========| FORMATAÇÃO MAIN |=============================================== */
+
+/* main{
     display: grid;
     height: 90vh;
     grid-template-row: 40% 60%;
@@ -112,7 +116,7 @@ main{
     justify-content: center;
     align-items: center;
     height: 70%;
-    /* margin-bottom: -50px; */
+    margin-bottom: -50px;
 }
 
 .row-2 #title{
@@ -126,23 +130,13 @@ main{
     opacity: 0.5;
     font-size: small;
     letter-spacing: 0.5px;
-}
+} */
 
 
 
 
 
-button{
-    width: 80%;
-    padding: 10px;
-    border-color: var(--yelllow);
-    background-color: var(--yelllow);
-    border-radius:7px;
-    color: var(--darkblue);
-    font-weight: 600;
-    font-family:'Nunito', sans-serif;
 
-}
 
 /* main{
     height: 90vh;
@@ -156,7 +150,7 @@ button{
 
 } */
 
-/* ========================================================= */
+/* ========| FORMATAÇÃO MOBILE SCREEN |================================================= */
 
 @media (max-width: 768px){
     .nav-list {
@@ -169,6 +163,7 @@ button{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        padding-bottom: 40px;
         left: -50%;
     }
 
@@ -178,6 +173,8 @@ button{
     }
 
     .mobile-menu{display: block;}
+    #btn_create, #title, #desc {display: block;}
+    
 
     #back-image{
         position: absolute;
@@ -190,33 +187,36 @@ button{
     main{
         display: grid;
         height: 90vh;
+        width: 100vw;
         grid-template-row: 40% 60%;
-        margin: 50px;
+        margin: 0px;
         text-align: center;
         justify-content: center;
         align-items: center;
-        
     }
     
     .row-1{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 80px;
     }
     
     
     .row-2{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -80px;
+        /* margin-top: -80px; */
+        text-align: center;
         /* height: 60%; */
         /* margin-bottom: -50px; */
     }
     
     .row-2 #title{
         color: var(--red);    
+        
     }
     
     .row-2 #desc {
@@ -224,18 +224,66 @@ button{
         opacity: 0.5;
         font-size: small;
         letter-spacing: 0.5px;
+        padding: 20px;
     }
 
-    button{
+    #btn_create{
         width: 80%;
         padding: 10px;
-        border-color: var(--yelllow);
+        border: 0;
         background-color: var(--yelllow);
         border-radius:7px;
         color: var(--darkblue);
         font-weight: 600;
         font-family:'Nunito', sans-serif;
     }
+
+
+
+    .register{
+        position: absolute;
+        background-color: var(--bege);
+        width: 100vw;
+        height: 360px;
+        border-radius: 20px;
+        color: var(--darkblue);
+        padding: 18px;
+        bottom: -100%;
+        
+    }
+
+    .register h2{
+        text-align: left;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+
+    .register{
+        text-align: left;
+        font-size: small;
+    }
+
+    .register input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 7px;
+        background: none;
+        font-family:'Nunito', sans-serif;
+    }
+
+    #btn_register{
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        background-color: var(--darkblue);
+        border-radius:7px;
+        color: var(--yelllow);
+        font-weight: 600;
+        font-family:'Nunito', sans-serif;
+        
+    }
+
 }
 
 
