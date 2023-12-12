@@ -37,7 +37,6 @@ a{
     letter-spacing: 4px;
 }
 
-
 nav .desktop {display: none;}
 nav .menu-icon{display: block;}
 
@@ -46,13 +45,10 @@ nav{
     display: flex;
     height: 10vh;
     justify-content: space-around;
-    align-items: center;
-    /* padding: 30px; */
-}
+    align-items: center;}
 
 .nav-list{
     display: flex;
-    /* flex-direction: column; */
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -60,13 +56,7 @@ nav{
     letter-spacing: 1.5px;
 }
 
-/* .icon{
-    display: none;
-    width: 30px;
-    border: none;
-    background: none;
-    cursor: pointer;
-} */
+/* ==========| ICON NAVBAR MOBILE |=============================================== */
 
 .mobile-menu{
     display: none;
@@ -90,39 +80,35 @@ nav{
     z-index: -1;
 }
 
-/* ==========| FORMATAÇÃO MAIN |=============================================== */
-
-/* main{
+main{
     display: grid;
     height: 90vh;
+    width: 100vw;
     grid-template-row: 40% 60%;
-    margin: 50px;
+    margin: 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    
 }
 
 .row-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 
 .row-2{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
-    margin-bottom: -50px;
+    text-align: center;
 }
 
 .row-2 #title{
-    color: var(--red);
-
-    
+    color: var(--red);    
 }
 
 .row-2 #desc {
@@ -130,26 +116,50 @@ nav{
     opacity: 0.5;
     font-size: small;
     letter-spacing: 0.5px;
-} */
+    padding: 20px;
+}
 
+.register{
+    position: absolute;
+    background-color: var(--bege);
+    width: 100vw;
+    height: 360px;
+    border-radius: 20px;
+    color: var(--darkblue);
+    padding: 18px;
+    bottom: -100%;
+}
 
+.register h2{
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
 
+.register{
+    text-align: left;
+    font-size: small;
+}
 
+.register input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background: none;
+    font-family:'Nunito', sans-serif;
+}
 
-
-
-/* main{
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    color: var(--bege);
-    padding: 50px;
-    text-align: center;
-
-} */
-
+#btn_register{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: var(--darkblue);
+    border-radius:7px;
+    color: var(--yelllow);
+    font-weight: 600;
+    font-family:'Nunito', sans-serif;
+}
 /* ========| FORMATAÇÃO MOBILE SCREEN |================================================= */
 
 @media (max-width: 768px){
@@ -169,31 +179,13 @@ nav{
 
     .nav-list{
         margin-left: 0;
-        /* opacity: 0; */
     }
 
     .mobile-menu{display: block;}
     #btn_create, #title, #desc {display: block;}
     
 
-    #back-image{
-        position: absolute;
-        width: 270px;
-        height: 250px;
-        padding: 25px;
-        z-index: -1;
-    }
-    
-    main{
-        display: grid;
-        height: 90vh;
-        width: 100vw;
-        grid-template-row: 40% 60%;
-        margin: 0px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+/* ==========| FORMATAÇÃO MAIN |=============================================== */
     
     .row-1{
         display: flex;
@@ -208,15 +200,11 @@ nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* margin-top: -80px; */
         text-align: center;
-        /* height: 60%; */
-        /* margin-bottom: -50px; */
     }
     
     .row-2 #title{
         color: var(--red);    
-        
     }
     
     .row-2 #desc {
@@ -238,53 +226,35 @@ nav{
         font-family:'Nunito', sans-serif;
     }
 
+/* ==========| LAYOUT MENU REGISTER |=============================================== */
 
-
-    .register{
-        position: absolute;
-        background-color: var(--bege);
-        width: 100vw;
-        height: 360px;
-        border-radius: 20px;
-        color: var(--darkblue);
-        padding: 18px;
-        bottom: -100%;
-        
-    }
-
-    .register h2{
-        text-align: left;
-        margin-bottom: 30px;
-        font-weight: 900;
-    }
-
-    .register{
-        text-align: left;
-        font-size: small;
-    }
-
-    .register input{
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 7px;
-        background: none;
-        font-family:'Nunito', sans-serif;
-    }
-
-    #btn_register{
-        width: 100%;
-        padding: 10px;
-        border: 0;
-        background-color: var(--darkblue);
-        border-radius:7px;
-        color: var(--yelllow);
-        font-weight: 600;
-        font-family:'Nunito', sans-serif;
-        
-    }
-
+    
 }
 
 
+@media (min-width: 768px) {
+    main{
+        grid-template-columns: 50% 50%;
+    }
 
+    .welcome{display: none;}
+    /* .register{display: none;} */
+    #btn_create{display: none;}
+
+    .register{
+        bottom: auto;
+        width: 40%;
+        margin: auto;
+        padding: 3%;
+    }
+
+    .register input{
+
+    }
+
+    #back-image{
+        width: auto;
+        height: 70%;
+        margin: auto;
+    }
+}
