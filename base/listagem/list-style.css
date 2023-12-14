@@ -51,7 +51,6 @@ nav{
     position: top;
 }
 
-
 .nav-list{
     display: flex;
     list-style: none;
@@ -113,13 +112,12 @@ main input, #reponse{
 }
 
 main input{
-    width: 300px;
+    width: 70vw;
     margin-top: 5px;
 }
 
 #reponse{
-    width: 500px;
-    /* height: 400px; */
+    width: 90vw;
 }
 
 main button{
@@ -133,25 +131,13 @@ main button{
     margin-bottom: 5px;
 }
 
-    
-/* main .desc{
-    border: solid 0.7px var(--red);
-    padding: 10px;
-    width: 100vw;
-    border-inline: none;
-    margin-bottom: 10px;
-} */
-
 .desc{
-    width: 70%;
+    width: 100%;
     border: 1px solid transparent;
     border-image: linear-gradient(to right, var(--darkblue), var(--red), var(--darkblue));
     border-image-slice: 1;
     padding: 15px;
 }
-
-
-
 
 @media (max-width: 768px){
     .nav-list {
@@ -173,11 +159,14 @@ main button{
     }
 
     .mobile-menu{display: block;}    
-
-    }
+}
 
 @media (min-width: 768px) {
     main #reponse{
         width: 400px
+    }
+
+    main input{
+        width: 30vw;
     }
 }

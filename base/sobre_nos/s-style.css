@@ -73,9 +73,6 @@ nav{
 }
 
 
-
-
-
 .back{
     width: 100vw;
     height: 90vh;
@@ -105,7 +102,6 @@ main{
     letter-spacing: 0.5px;
 }
 
-
 main h2{
     width: 100%;
     border: 1px solid transparent;
@@ -114,6 +110,8 @@ main h2{
     padding: 5px;
     color: var(--red);
     margin-bottom: 7px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 main .integrantes{
@@ -126,14 +124,18 @@ main .integrantes{
 }
 
 main .integrantes div{
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-main .integrantes div{
     padding: 8px;
     background: linear-gradient(to top, var(--integrantes), var(--darkblue)) ;
     border-radius: 7px;
+    width: 400px;
+    margin-bottom: 20px;}
+
+main .integrantes b{
+    color: var(--red);
+}
+
+main #desc{
+    font-size: 14px;
 }
 
 @media (max-width: 768px){
@@ -159,7 +161,7 @@ main .integrantes div{
 
 @media (min-width: 768px){
     main .integrantes{
-        justify-content: space-evenly;
+        gap: 15px;
     }
 
     main .integrantes div{
@@ -170,12 +172,15 @@ main .integrantes div{
         margin-top: 0vh;
     }
 
-    .border, #desc{
+    main .border, #desc{
         width: 60%;
         margin-inline: auto;
     }
 
-   
+    main #desc{
+        width: 50%;
+    }
+    
 }
 
 
