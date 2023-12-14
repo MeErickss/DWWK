@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC</title>
+
+    <link rel="stylesheet" href="s-style.css">
+    <script defer src="../mobile-navbar.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
+      </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <nav>
+                <a href="/" class="logo">Music</a>
+
+                <!-- abaixo estou criando o icone de menu de forma manual que aprendi no video " " -->
+                <div class="mobile-menu" onclick="handleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <!-- <div class="icon">
+                    <img id="menu-mobile" src="imagens/menu.svg">
+                </div> -->
+
+                <ul class="nav-list">
+                    <li> <a href="../index.html">Início</a </li>
+                    <li> <a href="sobre_nos/sobre.html">Sobre</a></li>
+                    <li> <a href="../listagem/listagem.html">Listagem</a></li>
+                    <li> <a href="../cadastro/cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="back">
+            <img id="back-image" src="../imagens/backgroud.png" >
+        </div>
+        
+        <main>
+            <div class="border">
+                <h2>Sobre Nós</h2>
+            </div>
+            
+            
+            <p id="desc">Somos alunos da UTFPR, atualmente estamos cursando o segundo ano do Ensino Técnico em Desenvolvimento de Sistemaas para a Internet. <br>
+                Desenvolvemos este site para um trabalho da diciplica de DW 1, nele estamos fazendo a junção de um Banco de Dados criado na diciplica de BD.
+            </p><br><br>
+            
+
+            <h3>Nossos integrantes são:</h3> <br>
+            
+            <div class="integrantes">
+                
+                <div id="lauber">
+                    <p> <b>LAUBER:</b><br>
+                        Responsável pelo que podemos chamar de "front-end", desenvolvel o design e a estruta de códigos referente a parte de design visual do trabalho.
+                    </p>
+                </div>
+                <br>
+                <div id="erick">
+                    <p> <b>ERICK:</b><br>
+                        Responsável por coordenar a parte de back-end deste trabalho, trabalhando nos codigos de implementação e junção do html com o python e o banco de dados.
+                    </p>
+                </div>
+                <br>
+                <div id="otavio">
+                    <br><p><b>OTÁVIO:</b><br>
+                        Auxiliou em ambas as partes, desenvolvendo soluções de erros e planejamentos.
+                    </p><br>
+                </div>
+            </div>
+            
+            
+
+        </main>
+    </div>
+
+    
+</body>
+</html>

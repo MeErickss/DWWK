@@ -134,14 +134,20 @@ main button{
 }
 
     
-main .desc{
+/* main .desc{
     border: solid 0.7px var(--red);
     padding: 10px;
     width: 100vw;
-    /* background: var(--darkRed); */
-    /* top: 0; */
     border-inline: none;
     margin-bottom: 10px;
+} */
+
+.desc{
+    width: 70%;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, var(--darkblue), var(--red), var(--darkblue));
+    border-image-slice: 1;
+    padding: 15px;
 }
 
 
