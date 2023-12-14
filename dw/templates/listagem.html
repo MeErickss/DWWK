@@ -9,8 +9,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
     </style>
 
-    <link rel="stylesheet" href="list-style.css">
-    <script defer src="list-script.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='list-style.css')}}">
+    <script defer src="{{ url_for('static', filename='mobile-navbar.js')}}"></script>
 </head>
 <body>
     <div class="container">
@@ -36,7 +36,7 @@
         </header>
 
         <main>
-            <img id="back-image" src="../imagens/backgroud.png" >
+            <img id="back-image" src="{{ url_for('static', filename='background.png')}}" >
 
             <div class="desc">
                 <p>Insira os seguintes dados:</p> 

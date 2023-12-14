@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUSIC</title>
 
-    <link rel="stylesheet" href="s-style.css">
-    <script defer src="mobile-navbar.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <script defer src="{{ url_for('static', filename='mobile-navbar.js')}}"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
@@ -17,7 +17,7 @@
 
         <header>
             <nav>
-                <a href="/" class="logo">Music</a>
+                <a href="/" class="logo">Music</a> 
 
                 <!-- abaixo estou criando o icone de menu de forma manual que aprendi no video " " -->
                 <div class="mobile-menu" onclick="handleMenu()">
@@ -26,32 +26,19 @@
                     <div class="line3"></div>
                 </div>
 
-                <!-- <div class="icon">
-                    <img id="menu-mobile" src="imagens/menu.svg">
-                </div> -->
-
                 <ul class="nav-list">
-                    <li> <a href="index.html">Início</a </li>
-                    <li> <a href="sobre_nos/sobre.html">Sobre</a></li>
-                    <li> <a href="listagem/listagem.html">Listagem</a></li>
-                    <li> <a href="cadastro/cadastro.html">Cadastro</a></li>
+                    <li> <a href="../sobre_nos/sobre.html">Sobre</a></li>
+                    <li> <a href="../lista/listagem.html">Listagem</a></li>
+                    <li> <a href="../cadastro/cadastro.html">Cadastro</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <div class="back">
-                <img id="back-image" src="../imagens/backgroud.png" >
-            </div>
-
-            <h1>Trabalho de DW</h1>
-            <hr>
-            <h2>Sobre Nós</h2>
+            <img id="back-image" src="{{ url_for('static', filename='background.png')}}" >
             
-            <p>Olá! Eu sou a Lauber, estou responsável pelo design front-end do trabalho</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum explicabo labore consequuntur dignissimos veritatis cum officia, reprehenderit beatae aperiam ut qui doloremque veniam tempore magnam amet, consectetur, alias est molestiae!</p>  
         </main>
     </div>
-
-    
 </body>
 </html>

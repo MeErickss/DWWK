@@ -9,7 +9,6 @@
 
 :root{
     --red:  rgba(239, 88, 88, 1);
-    --darkRed:  rgb(110, 50, 50);
     --darkblue:  rgba(5, 5, 34, 1);
     --yelllow: rgba(255, 222, 105, 1);
     --bege: rgb(244, 232, 191);
@@ -45,12 +44,8 @@ nav{
     background-color: var(--red);
     display: flex;
     height: 10vh;
-    width: 100vw;
     justify-content: space-around;
-    align-items: center;
-    position: top;
-}
-
+    align-items: center;}
 
 .nav-list{
     display: flex;
@@ -83,69 +78,107 @@ nav{
     height: 250px;
     padding: 25px;
     z-index: -1;
-    opacity: 0.5;
 }
 
 /* ==========| FORMATAÇÃO MAIN |=============================================== */
 
 main{
+    display: grid;
+    height: 90vh;
+    width: 100vw;
+    grid-template-row: 40% 60%;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+.row-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--bege);
-    width: 100vw;
-    height: 90vh;
-    top: 10vh;
-    padding: 40px;
     text-align: center;
 }
 
-main input, #reponse{
+.row-2 #title{
+    color: var(--red);    
+}
+
+.row-2 #desc {
+    color: #fff;
+    opacity: 0.5;
+    font-size: small;
+    letter-spacing: 0.5px;
+    padding: 20px;
+}
+
+#btn_create{
+    width: 80%;
     padding: 10px;
-    border-radius: 7px;
-    background: var(--darkblue);
-    border: solid var(--yelllow) 0.7px;
+    border: 0;
+    background-color: var(--yelllow);
+    border-radius:7px;
+    color: var(--darkblue);
+    font-weight: 600;
     font-family:'Nunito', sans-serif;
-    opacity: 0.7;
-    margin-bottom: 17px;
-    color: var(--yelllow);
 }
 
-main input{
-    width: 300px;
-    margin-top: 5px;
-}
 
-#reponse{
-    width: 500px;
-    /* height: 400px; */
-}
+/* ==========| LAYOUT MENU REGISTER |=============================================== */
 
-main button{
-    width: 50%;
-    background: var(--yelllow);
-    border: none;
-    border-radius: 5px;
-    padding: 8px;
-    font-family:'Nunito', sans-serif;
-    font-weight: 900;
-    margin-bottom: 5px;
-}
-
-    
-main .desc{
-    border: solid 0.7px var(--red);
-    padding: 10px;
+.register{
+    position: absolute;
+    background-color: var(--bege);
     width: 100vw;
-    /* background: var(--darkRed); */
-    /* top: 0; */
-    border-inline: none;
-    margin-bottom: 10px;
+    height: 360px;
+    border-radius: 20px;
+    color: var(--darkblue);
+    padding: 18px;
+    bottom: -100%;
 }
 
+.register h2{
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
 
+.register{
+    text-align: left;
+    font-size: small;
+}
 
+.register input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background: none;
+    border: solid var(--darkblue) 0.7px;
+    font-family:'Nunito', sans-serif;
+}
+
+#btn_register{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: var(--darkblue);
+    border-radius:7px;
+    color: var(--yelllow);
+    font-weight: 600;
+    font-family:'Nunito', sans-serif;
+}
+
+/* ========| FORMATAÇÃO MOBILE SCREEN |================================================= */
 
 @media (max-width: 768px){
     .nav-list {
@@ -168,10 +201,32 @@ main .desc{
 
     .mobile-menu{display: block;}    
 
-    }
+}
+
 
 @media (min-width: 768px) {
-    main #reponse{
-        width: 400px
+    main{
+        grid-template-columns: 50% 50%;
+    }
+
+    .welcome{display: none;}
+    /* .register{display: none;} */
+    #btn_create{display: none;}
+
+    .register{
+        bottom: auto;
+        width: 40%;
+        margin: auto;
+        padding: 3%;
+    }
+
+    .register input:hover{
+        border: 
+    }
+
+    #back-image{
+        width: auto;
+        height: 70%;
+        margin: auto;
     }
 }
