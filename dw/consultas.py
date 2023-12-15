@@ -1,6 +1,6 @@
 from criacao import *
 import sqlalchemy as sa
-
+import execjs
 
 
 def search(code):
@@ -21,7 +21,8 @@ def search(code):
 
             string = ""
             for i in resultado:
-                string += f"Usuario: {i['login']}       email:{i['gmail']}      conta criada em:{str(i['data_criacao'])}  \n"
+                string += f"Usuario: {i['login']}       email:{i['gmail']}      conta criada em:{str(i['data_criacao'])}    \n"
+                
             return string
 
         except Exception as error:

@@ -63,7 +63,6 @@ nav{
 }
 
 #link-page{
-    border-bottom: 2px solid var(--yelllow);
     padding: 5px;
     font-size: 20px;
     color: var(--yelllow);
@@ -99,7 +98,7 @@ main{
     display: grid;
     height: 90vh;
     width: 100vw;
-    grid-template-row: 40% 60%;
+    grid-template-rows: 40% 60%;
     margin: 0px;
     text-align: center;
     justify-content: center;
@@ -166,10 +165,6 @@ main{
     text-align: left;
     margin-bottom: 30px;
     font-weight: 900;
-}
-
-.register{
-   
 }
 
 .register input{

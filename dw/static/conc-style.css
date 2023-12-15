@@ -1,9 +1,8 @@
-/* =======| FORMATAÇÃO BASE DO SITE | ================================================== */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
 
 :root{
@@ -11,7 +10,7 @@
     --darkblue:  rgba(5, 5, 34, 1);
     --yelllow: rgba(255, 222, 105, 1);
     --bege: rgb(244, 232, 191);
-    --integrantes: rgb(94, 25, 42);
+    --desc: rgba(52, 33, 100, 0.729);
 }
 
 body, html{
@@ -25,9 +24,6 @@ body, html{
     font-family:'Nunito', sans-serif;
 }
 
-
-/* ==========| lAYOUT NAVBAR |=============================================== */
-
 a{
     color:var(--bege);
     text-decoration: none;
@@ -39,6 +35,7 @@ a{
     letter-spacing: 4px;
 }
 
+
 nav .desktop {display: none;}
 nav .menu-icon{display: block;}
 
@@ -48,14 +45,12 @@ nav{
     height: 10vh;
     justify-content: space-around;
     align-items: center;
-    /* padding: 30px; */
     position: sticky;
     top: 0;
 }
 
 .nav-list{
     display: flex;
-    /* flex-direction: column; */
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -75,8 +70,6 @@ nav{
     color: var(--yelllow);
 }
 
-/* ==========| ICON NAVBAR MOBILE |=============================================== */
-
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -88,8 +81,6 @@ nav{
     background-color: var(--bege);
     margin: 7px;
 }
-
-/* =========| IMAGEM FIXA DE BACKGROUND |================================================ */
 
 .back{
     width: 100vw;
@@ -107,35 +98,33 @@ nav{
     opacity: 0.3;
 }
 
-
-/* ==========| FORMATAÇÃO MAIN |=============================================== */
-
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 90vh;
     width: 100vw;
     color: var(--bege);
     padding: 30px;
     text-align: center;
-    margin-top: 20vh;
     letter-spacing: 0.5px;
+    margin-top: 250px;
 }
 
 main h2{
     width: 100%;
     border: 1px solid transparent;
-    border-image: linear-gradient(to right, var(--darkblue), var(--red), var(--darkblue));
+    border-image: linear-gradient(to right, var(--darkblue), var(--yelllow), var(--darkblue));
     border-image-slice: 1;
     padding: 5px;
-    color: var(--red);
+    color: var(--yelllow);
     margin-bottom: 7px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 
-main .integrantes{
+main .desc{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,23 +133,35 @@ main .integrantes{
     gap: 8px;
 }
 
-main .integrantes div{
+main .desc div{
     padding: 8px;
-    background: linear-gradient(to top, var(--integrantes), var(--darkblue)) ;
+    background: linear-gradient(to top, var(--desc), var(--darkblue)) ;
     border-radius: 7px;
-    width: 400px;
-    margin-bottom: 20px;}
-
-main .integrantes b{
-    color: var(--red);
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-main #desc{
-    font-size: 14px;
+main .desc b{
+    color: var(--yelllow);
 }
 
+main .desc hr{
+    opacity: 0.1;
+    margin: 5px;
+}
 
-/* ==========| FORMATAÇÃO MOBILE / DESKTOP |=============================================== */
+main .icons_language{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    height: 30px;
+    margin-bottom: 7px;
+}
+
+main .icons_language img{
+    width: 30px;
+}
 
 @media (max-width: 768px){
     .nav-list {
@@ -184,12 +185,12 @@ main #desc{
 }
 
 @media (min-width: 768px){
-    main .integrantes{
+    main .desc{
         gap: 15px;
     }
 
-    main .integrantes div{
-        width: 300px;
+    main .desc div{
+        width: 500px;
     }
 
     main{
