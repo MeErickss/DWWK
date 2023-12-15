@@ -70,7 +70,6 @@ nav{
 }
 
 #link-page{
-    border-bottom: 2px solid var(--yelllow);
     padding: 5px;
     font-size: 20px;
     color: var(--yelllow);

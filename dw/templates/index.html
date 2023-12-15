@@ -27,22 +27,24 @@
                 </div>
 
                 <ul class="nav-list">
-                    <li> <a id="link-page" href="index.html">Início</a </li>
+                    <li> <a id="link-page" href="../index.html">Início</a></li>
                     <li> <a href="../sobre_nos/sobre.html">Sobre</a></li>
                     <li> <a href="../lista/listagem.html">Listagem</a></li>
+                    <li> <a href="../conc/conceitos.html">Conceito</a></li>
                     <li> <a href="../cadastro/cadastro.html">Cadastro</a></li>
+
                 </ul>
             </nav>
         </header>
 
         <main>
-            <img id="back-image" src="imagens/backgroud.png" >
+            <img src="{{ url_for('static', filename='background.png') }}" id="back-image">
             
             <h1>Welcome</h1><br>
             <div class="desc">
-                Este é um site criado do zero por um grupo de alunos daUniversidade Tecnológica do Paraná (UTFPR) <br>
+                Este é um site criado do zero por um grupo de alunos da Universidade Tecnológica Federal do Paraná (UTFPR) <br>
                 Criado para um trabalho dirigido pelo nosso professor <br>
-                Ficou curioso? Acesse diferentes informações clicando nasopções no menu de navegação.
+                Ficou curioso? Acesse diferentes informações clicando nas opções no menu de navegação.
             </div><br>
                 
             <h3>GUIA:</h3>
@@ -55,6 +57,11 @@
                     <b>Listagem</b><br> Possibilita que o usuário faça uma pesquisa no banco de dados, retornando uma lista com os dados sugeridos.
                 </div>
                     <br>
+                <div>
+                    <b>Conceitos</b><br>
+                    Apresenta os conceitos usados durante a criação do site. 
+                </div>
+                <br>
                 <div>
                     <p><b>Cadastro</b><br> Registro de usuários novos em nosso site.</p>
                 </div>

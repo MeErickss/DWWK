@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUSIC</title>
 
-    <link rel="stylesheet" href="conc-style.css">
-    <script defer src="../mobile-navbar.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='conc-style.css')}}">
+    <script defer src="{{ url_for('static', filename='mobile-navbar.js')}}"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,400;1,600&family=Space+Grotesk:wght@500&display=swap');
@@ -26,22 +26,18 @@
                     <div class="line3"></div>
                 </div>
 
-                <!-- <div class="icon">
-                    <img id="menu-mobile" src="imagens/menu.svg">
-                </div> -->
-
                 <ul class="nav-list">
-                    <li> <a href="../index.html">Início</a </li>
+                    <li> <a href="../index.html">Início</a></li>
                     <li> <a href="../sobre_nos/sobre.html">Sobre</a></li>
-                    <li> <a id="link-page" href="/">Conceitos</a></li>
-                    <li> <a href="../listagem/listagem.html">Listagem</a></li>
+                    <li> <a href="../lista/listagem.html">Listagem</a></li>
+                    <li> <a id="link-page" href="../conc/conceitos.html">Conceito</a></li>
                     <li> <a href="../cadastro/cadastro.html">Cadastro</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="back">
-            <img id="back-image" src="../imagens/backgroud.png" >
+            <img src="{{ url_for('static', filename='background.png') }}" id="back-image">
         </div>
         
         <main>
@@ -49,11 +45,11 @@
                 <h2>Conceitos para Criação</h2>
             </div>
             <div class="icons_language">
-                <img src="../imagens/icon-html.png" alt="">
-                <img src="../imagens/icon-Css.512.png" alt="">
-                <img src="../imagens/icon-javascript.png" alt="">
-                <img src="../imagens/icon-python.png" alt="">
-                <img src="../imagens/icon-sql.png" alt="">
+                <img src="{{ url_for('static', filename='icon-html.png') }}" alt="">
+                <img src="{{ url_for('static', filename='icon-Css.512.png') }}" alt="">
+                <img src="{{ url_for('static', filename='icon-javascript.png') }}" alt="">
+                <img src="{{ url_for('static', filename='icon-python.png') }}" alt="">
+                <img src="{{ url_for('static', filename='icon-sql.png') }}" alt="">
             </div>
             <br>
 

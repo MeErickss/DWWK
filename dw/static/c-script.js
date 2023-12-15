@@ -31,9 +31,5 @@ function register() {
         
     } else {
         alert('Cadastro Realizado!');
-        
-        document.getElementById('id_user').value = '';
-        document.getElementById('id_email').value = '';
-        document.getElementById('id_pass').value = '';
     }
 }

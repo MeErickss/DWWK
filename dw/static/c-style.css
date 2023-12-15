@@ -63,7 +63,6 @@ nav{
 }
 
 #link-page{
-    border-bottom: 2px solid var(--yelllow);
     padding: 5px;
     font-size: 20px;
     color: var(--yelllow);
@@ -99,7 +98,7 @@ main{
     display: grid;
     height: 90vh;
     width: 100vw;
-    grid-template-row: 40% 60%;
+    grid-template-rows: 40% 60%;
     margin: 0px;
     text-align: center;
     justify-content: center;
@@ -168,10 +167,6 @@ main{
     font-weight: 900;
 }
 
-.register{
-   
-}
-
 .register input{
     width: 100%;
     padding: 10px;
@@ -220,6 +215,7 @@ main{
 @media (min-width: 768px) {
     main{
         grid-template-columns: 50% 50%;
+        margin-top: 15%;
     }
 
     .welcome{display: none;}
@@ -233,11 +229,11 @@ main{
         padding: 40px;
         border-radius: 20px;
         margin-right: 10%;
+        
     }
 
     .register input{
-        margin: bottom;
-        
+        margin: bottom;   
     }
 
     #back-image{
@@ -245,6 +241,5 @@ main{
         height: 60vh;
         margin-left: 10%;
         margin-bottom: 6%;
-        /* margin: auto; */
     }
 }

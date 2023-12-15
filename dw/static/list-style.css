@@ -67,7 +67,6 @@ nav{
 }
 
 #link-page{
-    border-bottom: 2px solid var(--yelllow);
     padding: 5px;
     font-size: 20px;
     color: var(--yelllow);
@@ -170,6 +169,7 @@ main button{
         justify-content: space-around;
         padding-bottom: 40px;
         right: -50%;
+        z-index: 100;
     }
 
     .nav-list{
