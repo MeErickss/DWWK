@@ -1,18 +1,18 @@
-let btnCreate = document.querySelector('#btn_create')
-let btnRegister = document.querySelector('#btn_register')
 let registerMenu = document.querySelector('.register')
-let welcome = document.querySelector('.welcome')
 
-function menuRegister(){
-    if (registerMenu.computedStyleMap.bottom == '-100%'  ||  registerMenu.computedStyleMap.bottom == ''){
-        registerMenu.computedStyleMap.bottom = "100%"     
+function menuRegister() {
+    if (registerMenu.style.bottom == '-100%'  ||  registerMenu.computedStyleMap.bottom == ''){
+        registerMenu.style.bottom = '0'     
+    
+    } else {
+        registerMenu.style.bottom = '-100%'
     }
 }
 
 function register() {
-    let name = document.getElementById('id_user').value;
-    let email = document.getElementById('id_email').value;
-    let senha = document.getElementById('id_pass').value;
+    let name = document.getElementById('input_name').value;
+    let email = document.getElementById('input_email').value;
+    let senha = document.getElementById('input_password').value;
 
     if (name == '') {
         alert('Insira um nome para efetuar o cadastro!');
@@ -25,6 +25,9 @@ function register() {
         
     } else {
         alert('Cadastro Realizado!');
-    
+        
+        document.getElementById('input_name').value = '';
+        document.getElementById('input_email').value = '';
+        document.getElementById('input_password').value = '';
     }
 }

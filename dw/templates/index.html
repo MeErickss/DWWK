@@ -27,32 +27,37 @@
                 </div>
 
                 <ul class="nav-list">
+                    <li> <a href="index.html">Início</a </li>
                     <li> <a href="../sobre_nos/sobre.html">Sobre</a></li>
-                    <li> <a href="../lista/listagem.html">Listagem</a></li>
+                    <li> <a href="../listagem/listagem.html">Listagem</a></li>
                     <li> <a href="../cadastro/cadastro.html">Cadastro</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <img id="back-image" src="{{ url_for('static', filename='background.png')}}" >
+            <img id="back-image" src="imagens/backgroud.png" >
             
-            <p>
-                Olá! Seja bem vindo ao nosso site! <br>
-                Este é um site criado do zero por um grupo de alunos da Universidade Tecnológica do Paraná (UTFPR) <br>
-            </p>
-
-            <p>Ficou curioso? Acesse diferentes informações clicando nas opções no menu de navegação. <br><br></p>
-            
-            <div class="instrucao">
-                <h3>INTRUÇÕES: </h3><br>
+            <h1>Welcome</h1><br>
+            <div class="desc">
+                Este é um site criado do zero por um grupo de alunos daUniversidade Tecnológica do Paraná (UTFPR) <br>
+                Criado para um trabalho dirigido pelo nosso professor <br>
+                Ficou curioso? Acesse diferentes informações clicando nasopções no menu de navegação.
+            </div><br>
                 
-                   <p>Ao clicar na opção "Sobre" você podera saber mais sobre quem nós somos, tipos de conceitos usados no processo de criação e muito mais. </p><br>
-
-                   <p>A opção "Listagem" retorna para o usuário uma lista de acordo com os dados inseridos nos campos.</p> <br>
-
-                   <p>E por ultimo temos a opção "Cadastro" que o nome já nos mostra, essa pagina serve para que o usuário possa se registrar no nosso site.</p>
-            </div>
+            <h3>GUIA:</h3>
+            <div class="guia">
+                <div>
+                    <b>Sobre</b><br> Oferece mais informações sobre os criadores do site, tipos de conceitos usados no processo decriação e muito mais.
+                </div>
+                    <br>
+                <div>
+                    <b>Listagem</b><br> Possibilita que o usuário faça uma pesquisa no banco de dados, retornando uma lista com os dados sugeridos.
+                </div>
+                    <br>
+                <div>
+                    <p><b>Cadastro</b><br> Registro de usuários novos em nosso site.</p>
+                </div>
                
         </main>
     </div>

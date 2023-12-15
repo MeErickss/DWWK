@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 :root{
@@ -12,14 +11,15 @@
     --bege: rgb(244, 232, 191);
 }
 
-body{
+body,html{
     background-color: var(--darkblue);
+    font-family:'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
     width: 100vw;
     height: 100vh;
-    font-family:'Nunito', sans-serif;
 }
 
 a{
@@ -43,26 +43,16 @@ nav{
     height: 10vh;
     justify-content: space-around;
     align-items: center;
-    /* padding: 30px; */
 }
 
 .nav-list{
     display: flex;
-    /* flex-direction: column; */
     list-style: none;
     justify-content: center;
     align-items: center;
     gap: 30px;
     letter-spacing: 1.5px;
 }
-
-/* .icon{
-    display: none;
-    width: 30px;
-    border: none;
-    background: none;
-    cursor: pointer;
-} */
 
 .mobile-menu{
     display: none;
@@ -81,19 +71,44 @@ nav{
     width:200px;
     opacity: 0.3;
     z-index: -1;
-    /* background-size: cover; */
 }
 
 main{
     height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
     color: var(--bege);
-    padding: 50px;
+    padding: 40px;
     text-align: center;
+    margin-top: 10vh;
+}
 
+main h1, h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--red);
+}
+
+main h3{
+    font-size: 20px;
+    color: var(--yelllow);
+}
+
+main .guia{
+    width: 70%;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, var(--darkblue), var(--yelllow), var(--darkblue));
+    border-image-slice: 1;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: small;
+}
+
+main b{
+    color: var(--yelllow);
 }
 
 @media (max-width: 768px){
@@ -112,11 +127,25 @@ main{
 
     .nav-list{
         margin-left: 0;
-        /* opacity: 0; */
     }
 
     .mobile-menu{display: block;}
 }
 
 
+@media (min-width: 768px){
+    main{
+        margin-top: 0;
+    }
 
+    main .guia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main .guia div{
+        width: 200px;
+    }
+}
