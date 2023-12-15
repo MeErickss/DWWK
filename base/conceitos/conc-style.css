@@ -58,12 +58,17 @@ nav{
     letter-spacing: 1.5px;
 }
 
-#link-conc{
+.nav-list a:hover{
+    font-size: 18px;
+    color: var(--yelllow);
+    transition: 0.2s;
+}
+
+#link-page{
     border-bottom: 2px solid var(--yelllow);
     padding: 5px;
     font-size: 20px;
     color: var(--yelllow);
-    
 }
 
 .mobile-menu{
