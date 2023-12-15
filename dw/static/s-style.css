@@ -1,8 +1,9 @@
+/* =======| FORMATAÇÃO BASE DO SITE | ================================================== */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 
 :root{
@@ -24,6 +25,9 @@ body, html{
     font-family:'Nunito', sans-serif;
 }
 
+
+/* ==========| lAYOUT NAVBAR |=============================================== */
+
 a{
     color:var(--bege);
     text-decoration: none;
@@ -34,7 +38,6 @@ a{
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-
 
 nav .desktop {display: none;}
 nav .menu-icon{display: block;}
@@ -60,6 +63,8 @@ nav{
     letter-spacing: 1.5px;
 }
 
+/* ==========| ICON NAVBAR MOBILE |=============================================== */
+
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -72,6 +77,7 @@ nav{
     margin: 7px;
 }
 
+/* =========| IMAGEM FIXA DE BACKGROUND |================================================ */
 
 .back{
     width: 100vw;
@@ -88,6 +94,9 @@ nav{
     width:200px;
     opacity: 0.3;
 }
+
+
+/* ==========| FORMATAÇÃO MAIN |=============================================== */
 
 main{
     display: flex;
@@ -137,6 +146,9 @@ main .integrantes b{
 main #desc{
     font-size: 14px;
 }
+
+
+/* ==========| FORMATAÇÃO MOBILE / DESKTOP |=============================================== */
 
 @media (max-width: 768px){
     .nav-list {

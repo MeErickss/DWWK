@@ -1,3 +1,5 @@
+/* =======| FORMATAÇÃO BASE DO SITE | ================================================== */
+
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +23,9 @@ body,html{
     width: 100vw;
     height: 100vh;
 }
+
+
+/* ==========| lAYOUT NAVBAR |=============================================== */
 
 a{
     color:var(--bege);
@@ -54,6 +59,8 @@ nav{
     letter-spacing: 1.5px;
 }
 
+/* ==========| ICON NAVBAR MOBILE |=============================================== */
+
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -66,12 +73,17 @@ nav{
     margin: 7px;
 }
 
+/* =========| IMAGEM FIXA DE BACKGROUND |================================================ */
+
 #back-image{
     position: fixed;
     width:200px;
     opacity: 0.3;
     z-index: -1;
 }
+
+
+/* ==========| FORMATAÇÃO MAIN |=============================================== */
 
 main{
     height: 90vh;
@@ -110,6 +122,9 @@ main .guia{
 main b{
     color: var(--yelllow);
 }
+
+
+/* ==========| FORMATAÇÃO MOBILE / DESKTOP |=============================================== */
 
 @media (max-width: 768px){
     .nav-list {

@@ -142,6 +142,9 @@ main button{
     padding: 15px;
 }
 
+
+/* ==========| FORMATAÇÃO MOBILE / DESKTOP |=============================================== */
+
 @media (max-width: 768px){
     .nav-list {
         position: absolute;
