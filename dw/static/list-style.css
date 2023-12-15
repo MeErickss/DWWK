@@ -118,6 +118,9 @@ main input{
 
 #reponse{
     width: 90vw;
+    height: 30vh;
+    margin-bottom: 0;
+    overflow: scroll;
 }
 
 main button{
@@ -143,7 +146,6 @@ main button{
     .nav-list {
         position: absolute;
         top: 10vh;
-        right: 0;
         width: 50vw;
         height: 90vh;
         background: var(--red);
@@ -151,7 +153,7 @@ main button{
         align-items: center;
         justify-content: space-around;
         padding-bottom: 40px;
-        left: -50%;
+        right: -50%;
     }
 
     .nav-list{

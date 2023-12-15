@@ -1,14 +1,12 @@
-let iconMenu = document.querySelector('.mobile-menu');
 let menuMobile = document.querySelector('.nav-list');
 
 function handleMenu(){
-    if (menuMobile.style.left == "-50%"  || menuMobile.style.left == ''){
-        menuMobile.style.left = "50%"
-        iconMenu.src = '../close.svg'
+    if (menuMobile.style.right == "-50%"  || menuMobile.style.right == ''){
+        menuMobile.style.right = "0%"        
+        menuMobile.style.transition = '0.4s'
         
     } else {
-        menuMobile.style.left = '-50%'
-        menuMobile
-        iconMenu.src = '../menu.svg';
+        menuMobile.style.right = '-50%'
+        menuMobile.style.transition = '0.4s'
     }
 }

@@ -137,13 +137,16 @@ main{
 
 .register{
     position: absolute;
-    background-color: var(--bege);
+    background: linear-gradient(to bottom right, var(--bege), var(--yelllow)) ;
     width: 100vw;
     height: 360px;
-    border-radius: 20px;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
     color: var(--darkblue);
     padding: 18px;
     bottom: -100%;
+    text-align: left;
+    font-size: small;
 }
 
 .register h2{
@@ -153,8 +156,7 @@ main{
 }
 
 .register{
-    text-align: left;
-    font-size: small;
+   
 }
 
 .register input{
@@ -178,13 +180,12 @@ main{
     font-family:'Nunito', sans-serif;
 }
 
-/* ========| FORMATAÇÃO MOBILE SCREEN |================================================= */
+/* ========| FORMATAÇÕES MOBILE / DESKTOP |================================================= */
 
 @media (max-width: 768px){
     .nav-list {
         position: absolute;
         top: 10vh;
-        right: 0;
         width: 50vw;
         height: 90vh;
         background: var(--red);
@@ -192,7 +193,7 @@ main{
         align-items: center;
         justify-content: space-around;
         padding-bottom: 40px;
-        left: -50%;
+        right: -50%;
     }
 
     .nav-list{
@@ -200,7 +201,6 @@ main{
     }
 
     .mobile-menu{display: block;}    
-
 }
 
 
@@ -210,23 +210,28 @@ main{
     }
 
     .welcome{display: none;}
-    /* .register{display: none;} */
+
     #btn_create{display: none;}
 
     .register{
         bottom: auto;
-        width: 40%;
-        margin: auto;
-        padding: 3%;
+        width: 35%;
+        height: auto;
+        padding: 40px;
+        border-radius: 20px;
+        margin-right: 10%;
     }
 
     .register input{
-
+        margin: bottom;
+        
     }
 
     #back-image{
         width: auto;
-        height: 70%;
-        margin: auto;
+        height: 60vh;
+        margin-left: 10%;
+        margin-bottom: 6%;
+        /* margin: auto; */
     }
 }

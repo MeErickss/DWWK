@@ -1,8 +1,13 @@
 let registerMenu = document.querySelector('.register')
+let backG = document.querySelector('#back-image')
 
 function menuRegister() {
     if (registerMenu.style.bottom == '-100%'  ||  registerMenu.computedStyleMap.bottom == ''){
-        registerMenu.style.bottom = '0'     
+        registerMenu.style.bottom = '0'
+        registerMenu.style.transition = '0.4s' 
+        backG.style.opacity = '0.5'
+        backG.style.transition = '0.4s'
+
     
     } else {
         registerMenu.style.bottom = '-100%'
