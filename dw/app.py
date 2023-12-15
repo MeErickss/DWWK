@@ -41,19 +41,12 @@ def listagem():
             resposta = (search(f"SELECT login, gmail, data_criacao FROM usuario as u WHERE u.login='{login}' AND u.gmail='{email}';"))
         else: 
             resposta = (search(f"SELECT login, gmail, data_criacao FROM usuario;"))
-            print(resposta)
-
 
     return render_template("listagem.html", resposta=resposta)
 
 @app.route("/sobre_nos/sobre.html")
 def sobre():
     return render_template("sobre.html")
-
-
-@app.route("/conc/conceitos.html")
-def conc():
-    return render_template("conceitos.html")
 
 
 if __name__ == "__main__":
